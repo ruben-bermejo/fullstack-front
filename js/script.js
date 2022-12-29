@@ -8,3 +8,16 @@ $("#formularioPedido").submit(function(e) {
         e.preventDefault();
     }
 });
+
+$("#tamano").on('change', function(){
+    $.ajax({
+        type: "POST",
+        url: "http://localhost:5000/checksize",
+        data: {
+            tamano: this.value
+        },
+        success: function(result){
+            $("#disponibilidad").text(result);
+        }
+    });
+});
