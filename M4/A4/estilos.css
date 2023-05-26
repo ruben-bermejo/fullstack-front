@@ -1,0 +1,28 @@
+.user-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    width: calc(80% - 10px);
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+  }
+  
+  .user-card-original {
+    background-color: darkseagreen;
+  }
+
+  .user-card-transformed {
+    background-color: darksalmon;
+  }
+
+  .contenedor {
+    display: flex;
+    align-items: center;
+  }
+
+  .contenedor h3 {
+    margin: 5px;
+    display: inline-block;
+  }

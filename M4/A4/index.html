@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solución Reactive</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Valores Originales</h1>
+      <div class="user-card user-card-original" id="user-card1">
+        <div class="contenedor">
+          <h3>Login:</h3>
+          <p id="user-card1-username"></p>
+        </div>
+        <div class="contenedor">
+          <h3>Nombre:</h3>
+          <p id="user-card1-name"></p>
+        </div>
+        <div class="contenedor">
+          <h3>Edad:</h3>
+          <p id="user-card1-age"></p>
+        </div>
+        <div class="contenedor">
+          <h3>Ciudad:</h3>
+          <p id="user-card1-city"></p>
+        </div>
+        <div class="contenedor">
+          <h3>País:</h3>
+          <p id="user-card1-country"></p>
+        </div>
+        <div class="contenedor">
+          <h3>Email:</h3>
+          <p id="user-card1-email"></p>
+        </div>
+      </div>
+    </div>  
+    <div>
+      <h1>Valores Transformados</h1>
+      <div class="user-card user-card-transformed" id="t-user-card1">
+        <div class="contenedor">
+          <h3>Login:</h3>
+          <p id="t-user-card1-username"></p>
+        </div>
+        <div class="contenedor">
+          <h3>Nombre:</h3>
+          <p id="t-user-card1-name"></p>
+        </div>
+        <div class="contenedor">
+          <h3>Edad:</h3>
+          <p id="t-user-card1-age"></p>
+        </div>
+        <div class="contenedor">
+          <h3>Ciudad:</h3>
+          <p id="t-user-card1-city"></p>
+        </div>
+        <div class="contenedor">
+          <h3>País:</h3>
+          <p id="t-user-card1-country"></p>
+        </div>
+        <div class="contenedor">
+          <h3>Email:</h3>
+          <p id="t-user-card1-email"></p>
+        </div>
+      </div>
+    </div>
+    <button id="reload-button">Recargar Valores</button>
+    <script src="node_modules/rxjs/dist/bundles/rxjs.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
