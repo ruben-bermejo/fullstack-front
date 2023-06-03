@@ -1,11 +1,23 @@
-<h2>Datos Personales:</h2>
+<h2>{{cabecera | titlecase}}:</h2>
+<div class="d-flex flex-md-row gap-3 mb-2">
 <dl>
   <dt>Nombre:</dt>
-  <dd>{{ nombre }}</dd>
+  <dd>{{ nombre | titlecase }}</dd>
   <dt>Apellidos:</dt>
-  <dd>{{ apellidos }}</dd>
+  <dd>{{ apellidos | titlecase }}</dd>
   <dt>Fecha nacimiento:</dt>
-  <dd>{{ fechaNacimiento }}</dd>
+  <dd>{{ fechaNacimiento | date: 'longDate'}}</dd>
   <dt>Ciudad:</dt>
   <dd>{{ ciudad }}</dd>
 </dl>
+<dl>
+  <dt>Dirección:</dt>
+  <dd>{{ direccion }}</dd>
+  <dt>Teléfono:</dt>
+  <dd>{{ telefono }}</dd>
+  <dt>E-mail:</dt>
+  <dd>{{ email | lowercase }}</dd>
+  <dt>DNI:</dt>
+  <dd>{{ dni | uppercase }} </dd>
+</dl>
+</div>

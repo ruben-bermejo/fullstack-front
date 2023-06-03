@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-estudios',
@@ -9,6 +9,8 @@ export class EstudiosComponent implements OnInit {
   titulos: string[] = [];
   otros: string[] = [];
   certificaciones: string[] = [];
+
+  @Input() cabecera: string = '';
 
   ngOnInit(): void {
     this.titulos = ['Licenciado en Química por la Universidad de Valladolid'];

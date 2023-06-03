@@ -1,8 +1,8 @@
 <div class="container mx-2">
-<h1>Portfolio:</h1>
-<app-datos-personales></app-datos-personales>
+<h1>Portfolio</h1>
+<app-datos-personales [cabecera]="cabeceras.get('PERSONAL')!"></app-datos-personales>
 <hr>
-<app-estudios></app-estudios>
+<app-estudios [cabecera]="cabeceras.get('ESTUDIOS')!"></app-estudios>
 <hr>
-<app-vida-laboral></app-vida-laboral>
+<app-vida-laboral [cabecera]="cabeceras.get('LABORAL')!" (valorMostrarProyectos) = "showMostrarProyectosValue($event)"></app-vida-laboral>
 </div>

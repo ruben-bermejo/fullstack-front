@@ -1,10 +1,33 @@
-<h2>Vida laboral:</h2>
+<div class="d-flex flex-md-row gap-3 mb-2">
+    <h2>{{cabecera  | titlecase }}:</h2>
+    <button
+      [ngClass]="mostrarProyectos ? 'btn-danger' : 'btn-success'"
+      class="btn"
+      id="btn-proyectos"
+      (click)="mostrarOcultarProyectos()"
+    >
+      {{ mostrarProyectos ? "Ocultar Proyectos" : "Mostrar Proyectos" }}
+    </button>
+</div>
 <dl>
-    <dt>Getronics (2017 - Actualidad):</dt>
-    <dd>Analista-Programador</dd>
-    <dd style="font-style: italic; padding-left: 3rem;" *ngFor="let proyecto of proyectos.get('GETRONICS')">{{proyecto}}</dd>
-    <dt>Atos (2007 - 2017):</dt>
-    <dd>Programador</dd>
-    <dd style="font-style: italic; padding-left: 3rem;" *ngFor="let proyecto of proyectos.get('ATOS')">{{proyecto}}</dd>
+  <dt>Getronics (2017 - Actualidad):</dt>
+  <dd>Analista-Programador</dd>
+  <span *ngIf="mostrarProyectos">
+    <dd
+      style="font-style: italic; padding-left: 3rem"
+      *ngFor="let proyecto of proyectos.get('GETRONICS')"
+    >
+      {{ proyecto }}
+    </dd>
+  </span>
+  <dt>Atos (2007 - 2017):</dt>
+  <dd>Programador</dd>
+  <span *ngIf="mostrarProyectos">
+    <dd
+      style="font-style: italic; padding-left: 3rem"
+      *ngFor="let proyecto of proyectos.get('ATOS')"
+    >
+      {{ proyecto }}
+    </dd>
+  </span>
 </dl>
-<button class="btn btn-success" id="btn-proyectos" (click)="mostrarProyectos()">Mostrar proyectos</button>
