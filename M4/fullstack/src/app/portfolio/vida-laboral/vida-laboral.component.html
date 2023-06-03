@@ -1,0 +1,10 @@
+<h2>Vida laboral:</h2>
+<dl>
+    <dt>Getronics (2017 - Actualidad):</dt>
+    <dd>Analista-Programador</dd>
+    <dd style="font-style: italic; padding-left: 3rem;" *ngFor="let proyecto of proyectos.get('GETRONICS')">{{proyecto}}</dd>
+    <dt>Atos (2007 - 2017):</dt>
+    <dd>Programador</dd>
+    <dd style="font-style: italic; padding-left: 3rem;" *ngFor="let proyecto of proyectos.get('ATOS')">{{proyecto}}</dd>
+</dl>
+<button class="btn btn-success" id="btn-proyectos" (click)="mostrarProyectos()">Mostrar proyectos</button>

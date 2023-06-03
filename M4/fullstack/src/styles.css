@@ -1,0 +1,36 @@
+h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #02e600;
+}
+
+hr {
+    color: #02e600;
+}
+
+dt {
+    color: #7bdcb5;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+dd {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-left: 4rem;
+}
+
+body {
+    background-color: #1D252C;
+}
