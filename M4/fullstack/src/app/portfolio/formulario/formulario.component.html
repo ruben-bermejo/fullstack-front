@@ -1,0 +1,46 @@
+<h2 class="mb-4">Formulario:</h2>
+<form [formGroup]="formularioTZ" (ngSubmit)="getCityData()">
+  <div class="row">
+    <div class="col">
+      <input
+        type="text"
+        formControlName="nombre"
+        class="form-control mb-4"
+        placeholder="Nombre"
+        [ngClass]="displayFieldCss('nombre')"
+      />
+      <div class="invalid-feedback">
+        Por favor introduzca el nombre.
+      </div>
+    </div>
+    <div class="col">
+      <input
+        type="email"
+        formControlName="email"
+        class="form-control mb-4"
+        placeholder="Email"
+        [ngClass]="displayFieldCss('email')"
+      />
+      <div class="invalid-feedback">
+        Por favor introduzca un email válido.
+      </div>
+    </div>
+    <div class="col">
+      <select formControlName="ciudad" class="form-select mb-4" [ngClass]="displayFieldCss('ciudad')">
+        <option hidden value="" disabled selected>Seleccione una ciudad</option>
+        <option *ngFor="let city of cities" [label]="city.name" [value]="city.value">{{ city.name }}</option>
+      </select>
+      <div class="invalid-feedback">
+        Por favor seleccione un valor.
+      </div>
+    </div>
+    <div class="col">
+      <button type="submit" class="btn btn-primary" [disabled]="formularioTZ.invalid">
+        OK
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <h2 *ngIf="cityDateTime !== ''">{{cityDateTime}} </h2>
+  </div>
+</form>

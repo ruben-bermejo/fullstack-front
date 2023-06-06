@@ -1,8 +1,29 @@
-<div class="container mx-2">
-<h1>Portfolio</h1>
-<app-datos-personales [cabecera]="cabeceras.get('PERSONAL')!"></app-datos-personales>
-<hr>
-<app-estudios [cabecera]="cabeceras.get('ESTUDIOS')!"></app-estudios>
-<hr>
-<app-vida-laboral [cabecera]="cabeceras.get('LABORAL')!" (valorMostrarProyectos) = "showMostrarProyectosValue($event)"></app-vida-laboral>
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a routerLink="personal"
+          [ngClass]="[router.isActive('/personal', true) ? 'active': '' ]"
+          class="nav-link">Datos Personales</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="knowledge"
+          [ngClass]="[router.isActive('/knowledge', true) ? 'active': '' ]"
+          class="nav-link">Formación y Habilidades</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="experience"
+          [ngClass]="[router.isActive('/experience', true) ? 'active': '' ]"
+          class="nav-link">Vida Laboral</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="form"
+          [ngClass]="[router.isActive('/form', true) ? 'active': '' ]"
+          class="nav-link">Formulario</a>
+      </li>
+    </ul>
+  </header>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
 </div>

@@ -1,22 +1,19 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'fullstack';
-  public cabeceras: Map<string, string> = new Map<string, string>();
+  constructor(public router: Router) {
+    this.router.navigate(['/personal']);
+  }
 
-  constructor() {
-    this.cabeceras.set('PERSONAL', 'datos personales');
-    this.cabeceras.set('ESTUDIOS', 'formación');
-    this.cabeceras.set('LABORAL', 'vida laboral');
-   }
-
-   showMostrarProyectosValue(valorNuevo: string){
-    console.log('El valor de la variable @Output mostrarProyectos es: ' + valorNuevo);
-   }
-
+  showMostrarProyectosValue(valorNuevo: string) {
+    console.log(
+      'El valor de la variable @Output mostrarProyectos es: ' + valorNuevo
+    );
+  }
 }

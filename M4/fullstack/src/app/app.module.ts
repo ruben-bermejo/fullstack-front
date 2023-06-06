@@ -6,16 +6,18 @@ import { PrimerComponenteComponent } from './miscomponentes/primer-componente/pr
 import { PortfolioModule } from './portfolio/portfolio.module';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+import { AppRoutingModule } from './app-routing.module';
 registerLocaleData(localeEs, 'es');
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrimerComponenteComponent
+    PrimerComponenteComponent,
   ],
   imports: [
     BrowserModule,
-    PortfolioModule
+    PortfolioModule,
+    AppRoutingModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: "es" }],
   bootstrap: [AppComponent]
