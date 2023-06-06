@@ -1,4 +1,5 @@
 <h2>Formación y Habilidades:</h2>
+<div class="d-flex flex-md-row gap-3 mb-2">
 <dl>
   <dt>Títulos académicos:</dt>
   <dd *ngFor="let titulo of titulos">{{ titulo }}</dd>
@@ -6,4 +7,15 @@
   <dd *ngFor="let cert of certificaciones">{{ cert }}</dd>
   <dt>Formación complementaria:</dt>
   <dd *ngFor="let otro of otros">{{ otro }}</dd>
+  <dt>Lenguajes de programación:</dt>
+  <dd *ngFor="let lang of languages">{{ lang }}</dd>
 </dl>
+<dl>
+  <dt>Frameworks y herramientas:</dt>
+  <dd *ngFor="let fw of frameworks">{{ fw }}</dd>
+  <dt>Servidores de Aplicaciones e IDEs:</dt>
+  <dd *ngFor="let ide of ides">{{ ide }}</dd>
+  <dt>Bases de Datos:</dt>
+  <dd *ngFor="let db of dbs">{{ db }}</dd>
+</dl>
+</div>

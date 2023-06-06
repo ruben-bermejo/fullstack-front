@@ -9,6 +9,10 @@ export class EstudiosComponent implements OnInit {
   titulos: string[] = [];
   otros: string[] = [];
   certificaciones: string[] = [];
+  languages: string[] = [];
+  frameworks: string[] = [];
+  ides: string[] = [];
+  dbs: string[] = [];
 
   @Input() cabecera: string = '';
 
@@ -19,5 +23,9 @@ export class EstudiosComponent implements OnInit {
       'Professional Scrum Master I | Scrum.org',
       'ISTQB Certified Tester, Foundation Level | International Software Quality Institute',
     ];
+    this.languages = ['Java', 'Typescript', 'python', 'SQL', 'pl/sql', 'Shell Script'];
+    this.frameworks = ['Spring', 'Angular', 'Hibernate', 'Maven'];
+    this.ides = ['Tomcat', 'Jboss / Wildfly', 'eclipse', 'IntelliJ', 'Visual Studio'];
+    this.dbs = ['Oracle', 'SQL Server', 'MySQL / MariaDB'];
   }
 }
