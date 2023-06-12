@@ -1,0 +1,28 @@
+.datos {
+    display: flex;
+    flex-direction: row;
+    
+    dt {
+        color: #7bdcb5;
+        font-weight: 600;
+        font-size: 18px;
+        margin-left: 2rem;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 0.5em;
+    }
+    
+    dd {
+        color: #FFFFFF;
+        font-size: 16px;
+        margin-left: 4rem;
+        margin-bottom: 1em;
+    }
+    
+}
+
+.cabeceraDatos {
+    font-weight: 700; 
+    font-size: 26px;
+    color: #02e600;
+    margin: 0px;
+}

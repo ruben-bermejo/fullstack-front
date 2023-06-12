@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import CustomComponent from './custom/customComponent';
 import reportWebVitals from './reportWebVitals';
+import DatosComponent from './portfolio/datosComponent';
+import EstudiosComponent from './portfolio/estudiosComponent';
+import LaboralComponent from './portfolio/laboralComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CustomComponent />
-    
+    <DatosComponent />
+    <EstudiosComponent />
+    <LaboralComponent />
   </React.StrictMode>
 );
 

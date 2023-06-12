@@ -1,0 +1,28 @@
+.laboral {
+    display: flex;
+    flex-direction: row;
+    
+    dt {
+        color: #dcc27b;
+        font-weight: 600;
+        font-size: 18px;
+        margin-left: 2rem;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 0.5em;
+    }
+    
+    dd {
+        color: #FFFFFF;
+        font-size: 16px;
+        margin-left: 4rem;
+        margin-bottom: 1em;
+    }
+    
+}
+
+.cabeceraLaboral {
+    font-weight: 700; 
+    font-size: 26px;
+    color: #e6a900;
+    margin: 0px;
+}
