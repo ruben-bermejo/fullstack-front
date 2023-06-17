@@ -4,16 +4,16 @@ import './datosComponent.scss';
 export default class DatosComponent extends React.Component {
     render() {
         return (
-            misDatos()
+            misDatos(this.props)
         );
     }
 }
 
-function misDatos() {
+function misDatos(props) {
     return(
         <div>
             <div className="cabeceraDatos">
-                <h2>Datos Personales:</h2>
+                <h2>{props.cabecera}</h2>
             </div>
             <div className="datos">
                 <dl>

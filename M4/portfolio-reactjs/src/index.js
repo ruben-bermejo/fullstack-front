@@ -2,16 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import DatosComponent from './portfolio/datosComponent';
-import EstudiosComponent from './portfolio/estudiosComponent';
-import LaboralComponent from './portfolio/laboralComponent';
-
+import PortfolioRouter from './portfolio/portfolioRouterComponent';
+import { BrowserRouter as Router } from 'react-router-dom'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DatosComponent />
-    <EstudiosComponent />
-    <LaboralComponent />
+    <Router>
+      <PortfolioRouter />
+    </Router>
   </React.StrictMode>
 );
 

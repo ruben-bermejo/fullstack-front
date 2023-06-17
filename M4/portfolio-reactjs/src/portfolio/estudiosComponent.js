@@ -3,15 +3,15 @@ import "./estudiosComponent.scss";
 
 export default class EstudiosComponent extends React.Component {
   render() {
-    return misEstudios();
+    return misEstudios(this.props);
   }
 }
 
-function misEstudios() {
+function misEstudios(props) {
   return (
     <div>
       <div className="cabeceraEstudios">
-        <h2>Formación y Habilidades:</h2>
+        <h2>{props.cabecera}</h2>
       </div>
       <div className="estudios">
         <dl>
